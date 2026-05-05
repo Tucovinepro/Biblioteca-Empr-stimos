@@ -5,11 +5,11 @@ tipos_de_livros = ["Romance", "Suspense", "Aventura", "Filosofia", "Literatura b
 
 
 def cadastrar_leitores(leitores):
-   a = print(input("Qual o nome do novo leitor"))
+   a = (input("Qual o nome do novo leitor"))
    leitores.append(a)
 
 def recomendações_para_os_leitores(idade_do_leitor):
-   b = print(input('Qual a idade do leitor'))
+   b = int(input('Qual a idade do leitor'))
    idade_do_leitor.append(b)
    if b<=10:
       print("Recomende um livro infantil para um possivel empréstimo")

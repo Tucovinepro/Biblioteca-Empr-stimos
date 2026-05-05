@@ -5,11 +5,11 @@ tipos_de_livros = ["Romance", "Suspense", "Aventura", "Filosofia", "Literatura b
 
 
 def cadastrar_leitores(leitores):
-   a = print(input("Qual o nome do novo leitor"))
+   a = (input("Qual o nome do novo leitor: "))
    leitores.append(a)
 
 def recomendações_para_os_leitores(idade_do_leitor):
-   b = print(input('Qual a idade do leitor'))
+   b = int(input('Qual a idade do leitor: '))
    idade_do_leitor.append(b)
    if b<=10:
       print("Recomende um livro infantil para um possivel empréstimo")
@@ -27,10 +27,10 @@ def empréstimos(tipos_de_livros):
       print("Tipo disponível")
 
 def tempo_de_empréstimo():
-  w = int((input("Quanto é o tempo de empréstimo ")))
-  if w <= "5":
+  w = str((input("Quanto é o tempo de empréstimo ")))
+  if w <= 5:
      print("O leitor deve pagar 10 reais de multa se passar do tempo")
-  elif w <= "10":
+  elif w <= 10:
      print("O leitor deve pagar 20 reais de multa se passar do tempo")
   else:
      print("O leitor paga 45 reais de multa se passar do tempo")
